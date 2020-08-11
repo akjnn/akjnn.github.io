@@ -512,6 +512,20 @@ footer p {
 			font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 		}
 
+		header {
+			width: 80vw;
+		}
+
+		header .logo {
+			display: none;
+		}
+
+		.menu ul {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+
 		.swiper-button-next, .swiper-button-prev {
 			display: none !important;
 		}
@@ -532,7 +546,11 @@ footer p {
 		}
 
 		.work {
-			width: 80vw;
+			width: 100vw;
+		}
+
+		.work li {
+			padding: 5px 0;
 		}
 
 		.project-description {
