@@ -1,7 +1,6 @@
-$(function () {
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  });
+const hamburger = document.getElementById('hamburger');
+const navUL = document.getElementById('nav-ul');
+
+hamburger.addEventListener('click', () => {
+  navUL.classList.toggle('show');
 });

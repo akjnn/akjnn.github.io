@@ -14,10 +14,12 @@
 <section class="fvh">
 
 <header>
-	<a class="logo" href="index.html">Arcelus Quentin</a>
-	<nav class="menu" id="topMenu">
-		<ul>
-			<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+	<nav class="menu">
+		<a class="logo" href="index.html">Arcelus Quentin</a>
+		<button class="hamburger" id="hamburger">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul id="nav-ul">
 			<li><a href="index.html">Portfolio</a></li>
 			<li><a href="apropos.html">À propos</a></li>
 			<li><a href="contact.html">Contact</a></li>
@@ -49,7 +51,7 @@
 			<div class="description">
 				<h2>Geschmack</h2>
 				<div class="details">
-					<p>web - print</p>
+					<p>print</p>
 					<p>2019</p>
 				</div>
 			</div>
@@ -187,15 +189,8 @@
 
 </section>
 <script src="../js/swiper-min.js"></script>
-<script>
-function myFunction() {
-  var x = document.getElementById("topMenu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
+<script src="../js/script.js" type="text/javascript">
+
 </script>
 <script>
 	var swiper = new Swiper('.swiper-container', {
