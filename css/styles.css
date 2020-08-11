@@ -484,7 +484,6 @@ span {
 .caption {
 	color: #555658 !important;
 	font-style: italic;
-	font-size: 0.8rem;
 }
 
 footer {
@@ -506,7 +505,8 @@ footer p {
 /* Phones */
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 812px) {
+  and (max-device-width: 812px)
+	and (hover: none) {
 
 		html {
 			font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -516,8 +516,13 @@ footer p {
 			display: none !important;
 		}
 
+		.swiper-wrapper:hover .swiper-slide:not(:hover) {
+			opacity: 1;
+		}
+
 		.description {
 			opacity: 1;
+			transform: translateY(0);
 		}
 
 		.project-content {
@@ -591,6 +596,10 @@ footer p {
 			height: auto;
 			margin: 60px auto;
 			flex-direction: column;
+		}
+
+		.caption {
+			font-size: 0.8rem;
 		}
 
 		.hypertext::after {
