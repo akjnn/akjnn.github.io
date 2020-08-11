@@ -512,18 +512,24 @@ footer p {
 			font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 		}
 
-		header {
-			width: 80vw;
+		/* RESPONSIVE MENU */
+		.menu ul li a:not(:first-child) {display: none;}
+		.menu a.icon {
+			float: right;
+			display: block;
 		}
 
-		header .logo {
-			display: none;
+		.menu.responsive {position: relative;}
+		.menu.responsive .icon {
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 
-		.menu ul {
-			display: flex;
-			width: 100%;
-			justify-content: space-between;
+		.menu.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
 		}
 
 		.swiper-button-next, .swiper-button-prev {
@@ -550,7 +556,7 @@ footer p {
 		}
 
 		.work li {
-			padding: 5px 0;
+			padding: 3px 0;
 		}
 
 		.project-description {
@@ -625,27 +631,3 @@ footer p {
 		}
 
 }
-
-/* MENU RESPONSIVE
-@media screen and (max-width: 600px) {
-  .menu a:not(:first-child) {display: none;}
-  .menu a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .menu.responsive {position: relative;}
-  .menu.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menu.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-*/
