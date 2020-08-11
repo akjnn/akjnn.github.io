@@ -3,7 +3,9 @@
 <head>
 	<title>Arcelus Quentin - Portfolio</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/swiper-min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +15,9 @@
 
 <header>
 	<a class="logo" href="index.html">Arcelus Quentin</a>
-	<nav class="menu">
+	<nav class="menu" id="topMenu">
 		<ul>
+			<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 			<li><a href="index.html">Portfolio</a></li>
 			<li><a href="apropos.html">À propos</a></li>
 			<li><a href="contact.html">Contact</a></li>
@@ -24,6 +27,7 @@
 
 <!--Container-->
 <div class="swiper-container">
+
 	<!--Wrapper-->
 	<div class="swiper-wrapper">
 
@@ -51,20 +55,8 @@
 			</div>
 		</div>
 
-		<!--VaKarM-->
-		<div class="swiper-slide" style="background-color: #3ea3dc;" onclick="location.href='./projects/vakarm.html'">
-			<img src="../img/logos/logo_vakarm.svg" alt="VaKarM">
-			<div class="description">
-				<h2>VaKarM</h2>
-				<div class="details">
-					<p>web</p>
-					<p>2015 - 2016</p>
-				</div>
-			</div>
-		</div>
-
 		<!--The Mockers-->
-		<div class="swiper-slide" style="background-color: #1c4584;" onclick="location.href='./projects/the-mockers.html'">
+		<div class="swiper-slide" style="background-image: url('../img/covers/themockers.jpg');" onclick="location.href='./projects/the-mockers.html'">
 			<img src="../img/logos/logo_themockers.svg" alt="The Mockers">
 			<div class="description">
 				<h2>The Mockers</h2>
@@ -75,14 +67,14 @@
 			</div>
 		</div>
 
-	<!--Hop Hop Hop-->
-		<div class="swiper-slide" style="background-color: #fff;" onclick="location.href='./projects/hophophop.html'">
-			<img src="../img/logos/logo_hophophop.svg" alt="Hop Hop Hop !!!">
+		<!--VaKarM-->
+		<div class="swiper-slide" style="background-image: url('../img/covers/vakarm.jpg');" onclick="location.href='./projects/vakarm.html'">
+			<img src="../img/logos/logo_vakarm.svg" alt="VaKarM">
 			<div class="description">
-				<h2>Hop Hop Hop</h2>
+				<h2>VaKarM</h2>
 				<div class="details">
-					<p>wordpress</p>
-					<p>2019</p>
+					<p>web</p>
+					<p>2015 - 2016</p>
 				</div>
 			</div>
 		</div>
@@ -98,14 +90,26 @@
 			</div>
 		</div>
 
-		<!--Student Championship-->
-		<div class="swiper-slide" style="background-image: linear-gradient(to bottom, #fff, #bdb0d7);" onclick="location.href='./projects/student-championship.html'">
-			<img src="../img/logos/logo_studentchampionship.svg" alt="Student Championship">
+	<!--Hop Hop Hop-->
+		<div class="swiper-slide" style="background-image: url('../img/covers/hophophop.jpg');" onclick="location.href='./projects/hophophop.html'">
+			<img src="../img/logos/logo_hophophop.svg" alt="Hop Hop Hop !!!">
 			<div class="description">
-				<h2>Student Championship</h2>
+				<h2>Hop Hop Hop</h2>
 				<div class="details">
-					<p>maquette</p>
+					<p>wordpress</p>
 					<p>2019</p>
+				</div>
+			</div>
+		</div>
+
+		<!--Wyffa-->
+		<div class="swiper-slide" style="background-color: #000;" onclick="location.href='./projects/wyffa.html'">
+			<img src="../img/logos/logo_wyffa.svg" alt="Wyffa">
+			<div class="description">
+				<h2>Wyffa</h2>
+				<div class="details">
+					<p>print - textile</p>
+					<p>2018 - 2020</p>
 				</div>
 			</div>
 		</div>
@@ -145,6 +149,18 @@
 			</div>
 		</div>
 
+		<!--Student Championship-->
+		<div class="swiper-slide" style="background-image: linear-gradient(to bottom, #fff, #bdb0d7);" onclick="location.href='./projects/student-championship.html'">
+			<img src="../img/logos/logo_studentchampionship.svg" alt="Student Championship">
+			<div class="description">
+				<h2>Student Championship</h2>
+				<div class="details">
+					<p>maquette</p>
+					<p>2019</p>
+				</div>
+			</div>
+		</div>
+
 		<!--Flickshot-->
 		<div class="swiper-slide" style="background-image: url('../img/covers/flickshot.jpg');" onclick="location.href='./projects/flickshot.html'">
 			<img src="../img/logos/logo_flickshot.svg" alt="Flickshot">
@@ -157,17 +173,6 @@
 			</div>
 		</div>
 
-		<!--Wyffa-->
-		<div class="swiper-slide" style="background-color: #000;" onclick="location.href='./projects/wyffa.html'">
-			<img src="../img/logos/logo_wyffa.svg" alt="Wyffa">
-			<div class="description">
-				<h2>Wyffa</h2>
-				<div class="details">
-					<p>print - textile</p>
-					<p>2018 - 2020</p>
-				</div>
-			</div>
-		</div>
 	</div>
 
 </div> <!--Fin du swiper-container-->
@@ -183,6 +188,16 @@
 </section>
 <script src="../js/swiper-min.js"></script>
 <script>
+function myFunction() {
+  var x = document.getElementById("topMenu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+</script>
+<script>
 	var swiper = new Swiper('.swiper-container', {
 		slidesPerGroup: 1,
 		grabCursor: true,
@@ -194,13 +209,17 @@
 			},
 		// ----- Responsive ----- //
 		breakpoints: {
-			640: {
+			480: {
 				slidesPerView: 1,
 				spaceBetween: 0,
 			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
 			1024: {
 				slidesPerView: 4,
-				spaceBetween: 20,
+				spaceBetween: 15,
 			},
 		}
 	});
