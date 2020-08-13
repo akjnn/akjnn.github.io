@@ -64,15 +64,13 @@ body {
 }
 
 .menu ul li {
-	padding: 0 10px;
-	margin: 0 50px;
+	margin-left: 50px;
 }
 
 .menu ul li a {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
-	position: absolute;
 	line-height: 0%;
 }
 
@@ -519,19 +517,12 @@ footer p {
 
 		.menu ul.show {
 			display: flex;
-			margin: 0 10%;
+			justify-content: space-between;
+			width: 100%;
 		}
 
-		.menu ul li:first-child {
-			left: 10%;
-		}
-
-		.menu ul li:last-child {
-			right: 10%;
-		}
-
-		.menu ul li a::before {
-			display: none;
+		.menu ul.show li {
+			margin-left: 0;
 		}
 
 		.logo {
