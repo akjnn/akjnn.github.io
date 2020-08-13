@@ -103,6 +103,19 @@ body {
 	outline: none;
 }
 
+.swipe-info {
+	font-size: 0.8rem;
+	font-weight: lighter;
+	text-align: center;
+	margin: auto;
+	display: none;
+}
+
+.swipe-info span {
+	color: #555658;
+	padding: 0;
+}
+
 .swiper-container {
 	margin: auto;
 	height: 75vh;
@@ -530,6 +543,10 @@ footer p {
 		}
 
 		.hamburger {
+			display: block;
+		}
+
+		.swipe-info {
 			display: block;
 		}
 
